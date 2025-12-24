@@ -1,1 +1,0 @@
-# ai-financial-market-assistant
