@@ -1,0 +1,9 @@
+numpy
+pandas
+yfinance
+scikit-learn
+matplotlib
+reportlab
+openpyxl
+requests
+textblob
