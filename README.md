@@ -75,9 +75,9 @@ Trade logs, portfolio weights, and statistical metrics.
 Intended Use
 This repository is intended as:
 
--a quantitative research prototype,
--a systematic trading framework demonstration,
--and a portfolio project for quantitative finance roles.
+a quantitative research prototype,
+a systematic trading framework demonstration,
+and a portfolio project for quantitative finance roles.
 
 It is not intended for live trading without further validation, transaction cost modeling, and execution-layer integration.
 
