@@ -59,7 +59,7 @@ def walkforward_backtest(df, ticker_name="Unknown", bench_series=None, risk_aver
         sq_bonus = 0.10 if (config.SQUEEZE_FILTER_ENABLE and is_squeezing.iloc[i]) else 0.0
         threshold = config.MIN_PROB_BULL_LONG - sq_bonus
         
-        # Sifnal Logic (Call/Put Balance)
+        # Signal Logic (Call/Put Balance)
         if uptrend and prob_up > threshold:
             signal = "LONG"
             prob = prob_up
@@ -82,7 +82,7 @@ def walkforward_backtest(df, ticker_name="Unknown", bench_series=None, risk_aver
                 p0 = df['Close'].iloc[i]
                 p1 = df['Close'].iloc[min(i+step, len(df)-1)]
                 
-                # PnL Hesabı
+                # PnL Calculation
                 raw_ret = (p1 - p0) / p0
                 if signal == "SHORT": raw_ret = -raw_ret
                 
