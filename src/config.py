@@ -40,8 +40,8 @@ RETRAIN_LOOKBACK_DAYS = 90
 LABEL_HORIZON_DAYS = 5
 ZSCROLL = 60
 TARGET_VOL_ANN = 0.20
-MAX_TRADE_RISK = 0.20  # Risk iştahı artırıldı
-KELLY_CAP = 0.35       # Kelly limiti artırıldı
+MAX_TRADE_RISK = 0.20  
+KELLY_CAP = 0.35       
 
 # --- FALLBACK LIST  ---
 FALLBACK_TICKERS = [
