@@ -10,8 +10,8 @@ from openpyxl import Workbook
 
 # --- STYLE DEFIINITIONS ---
 styles = getSampleStyleSheet()
-style_title = ParagraphStyle('T', parent=styles['Title'], fontSize=24, textColor=colors.HexColor("#0c2461"), spaceAfter=15) # SpaceAfter azaltıldı
-style_h2 = ParagraphStyle('H2', parent=styles['Heading2'], fontSize=13, textColor=colors.HexColor("#002060"), spaceBefore=5) # SpaceBefore azaltıldı
+style_title = ParagraphStyle('T', parent=styles['Title'], fontSize=24, textColor=colors.HexColor("#0c2461"), spaceAfter=15) 
+style_h2 = ParagraphStyle('H2', parent=styles['Heading2'], fontSize=13, textColor=colors.HexColor("#002060"), spaceBefore=5) 
 style_body = ParagraphStyle('B', parent=styles['BodyText'], fontSize=10, leading=14)
 style_disclaimer = ParagraphStyle('D', parent=styles['BodyText'], fontSize=7, textColor=colors.grey, alignment=1)
 style_green = ParagraphStyle('G', parent=styles['BodyText'], textColor=colors.darkgreen, fontSize=9)
