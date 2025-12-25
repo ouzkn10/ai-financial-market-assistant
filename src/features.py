@@ -32,17 +32,6 @@ def _safe_pct_change(s):
 #  MAIN FEATURE ENGINE
 # ================================================================
 def make_features(df: pd.DataFrame, ticker: str) -> pd.DataFrame:
-    """
-    Feature engineering pipeline (PHASE9 upgraded):
-    - MA20, MA50, MA200
-    - r1, r5, RSI
-    - Yang-Zhang volatility
-    - Regime indicators (bull_200, mom_20_50)
-    - News sentiment (2d rolling)
-    - Earnings flags
-    - Rolling z-score normalization (PHASE 9)
-    - Label: future return over LABEL_HORIZON_DAYS
-    """
 
     if df is None or not isinstance(df, pd.DataFrame):
         return pd.DataFrame()
@@ -120,7 +109,6 @@ def make_features(df: pd.DataFrame, ticker: str) -> pd.DataFrame:
     # -----------------------------
     feat = feat.dropna()
 
-    # Son güvenlik: her zaman DataFrame döndür
     if not isinstance(feat, pd.DataFrame):
         return pd.DataFrame()
 
