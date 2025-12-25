@@ -28,9 +28,6 @@ def max_drawdown(eq_array):
     return float(np.min(drawdown)) * 100
 
 def calculate_beta_alpha(strategy_curve, benchmark_curve):
-    """
-    Market Metriklerini (Beta, Alpha) hesaplar.
-    """
     try:
         r_strat = strategy_curve.pct_change().dropna()
         r_bench = benchmark_curve.pct_change().dropna()
